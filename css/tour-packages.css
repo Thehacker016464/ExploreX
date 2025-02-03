@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00a52f;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo{
+    font-size: 2rem;
+    font-family: "Bauhaus 93 V2";
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.navbar-logo span{
+    color: #000;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-links a{
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    margin-right: 1rem;
+    padding-bottom: 10px;
+}
+
+.navbar-links a:hover{
+    border-bottom: 2px solid #000;
+}
+
+/* Packages */
+
+.available{
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.package-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 15px;
+}

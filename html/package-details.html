@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreX</title>
+    <link
+    href="https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93+V2"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/package-details.css">
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar">
+        <!-- Logo -->
+         <a href="./home.html" class="navbar-logo">
+            Explore<span>X</span>
+        </a>
+
+        <!-- Navbar Links -->
+         <div class="navbar-links">
+             <a href="./home.html">Home</a>
+             <a href="#">Company</a>
+             <a href="#">Special Offers</a>
+             <a href="#">Reviews</a>
+             <a href="#">Log In</a>
+         </div>
+     </nav>
+
+     <div class="detail-container">
+        <img src="../assets/barrier-reef-1.jpeg" class="detail-image" alt="Mountain Tour">
+        
+        <div class="package-details">
+            <div class="description">
+                <h1>Mountain Adventure Package</h1>
+                <p>5 Days / 4 Nights</p>
+                <p>Experience the thrill of mountain trekking with our expert guides. Includes accommodation, meals, and all necessary equipment.</p>
+                <h3>Itinerary</h3>
+                <ul>
+                    <li>Day 1: Arrival and Orientation</li>
+                    <li>Day 2: Base Camp Trek</li>
+                    <li>Day 3: Summit Challenge</li>
+                    <li>Day 4: Return Journey</li>
+                    <li>Day 5: Departure</li>
+                </ul>
+            </div>
+            
+            <div class="price-box">
+                <h2>Package Price</h2>
+                <p>$999 per person</p>
+                <button class="book-now-btn">Book Now</button>
+                <p>Includes: Accommodation, Meals, Guide</p>
+                <p>Excludes: Airfare, Insurance</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+
+    <!-- India Carousel Section -->
+    <div class="india-section">
+        <h2>Explore India</h2>
+        <!-- Swiper Container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="../assets/barrier-reef-1.jpeg" alt="Taj Mahal">
+                    <h3>Taj Mahal, Agra</h3>
+                    <p>Visit the iconic symbol of love, a UNESCO World Heritage Site.</p>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="jaipur.jpg" alt="Jaipur">
+                    <h3>Jaipur, Rajasthan</h3>
+                    <p>Explore the Pink City's palaces, forts, and vibrant culture.</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="kerala.jpg" alt="Kerala">
+                    <h3>Kerala Backwaters</h3>
+                    <p>Experience serene houseboat rides in the lush green landscapes.</p>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <img src="goa.jpg" alt="Goa">
+                    <h3>Goa Beaches</h3>
+                    <p>Relax on the golden sands and enjoy the vibrant nightlife.</p>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <img src="ladakh.jpg" alt="Ladakh">
+                    <h3>Ladakh, Himalayas</h3>
+                    <p>Discover the breathtaking landscapes and Buddhist monasteries.</p>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <img src="varanasi.jpg" alt="Varanasi">
+                    <h3>Varanasi, Uttar Pradesh</h3>
+                    <p>Witness the spiritual essence of India on the banks of the Ganges.</p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- View More Button -->
+        <button class="view-more-btn" onclick="window.location.href='india-tours.html'">View More</button>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 20, /* Added space between cards */
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
